@@ -8,8 +8,8 @@ check console in developer tool.
 Use the package manager [npm](https://www.npmjs.com/) to install php-socket.io.
 
 ```bash
-npm install
 composer install
+npm install
 npm start
 ```
 
