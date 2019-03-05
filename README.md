@@ -17,7 +17,7 @@ node server.js
 
 ```
 http://localhost/php-socket.io/emit-test.php      # It will emit data on server
-http://localhost/shifaam/receiver.php             # It will receive data 
+http://localhost/php-socket.io/receiver.php             # It will receive data 
 ```
 
 ## Contributing
