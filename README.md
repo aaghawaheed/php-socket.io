@@ -10,7 +10,7 @@ Use the package manager [npm](https://www.npmjs.com/) to install php-socket.io.
 ```bash
 npm install
 composer install
-node server.js
+npm start
 ```
 
 ## Usage
