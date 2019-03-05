@@ -1,0 +1,7 @@
+{
+    "name": "shifaam/socket",
+    "description": "socket",
+    "require": {
+        "wisembly/elephant.io": "^3.3"
+    }
+}
