@@ -7,15 +7,15 @@ logger = require("winston");
 logger.info("SocketIO > Listening on port");
 
 var app = express();
-var http_server = http.createServer(app).listen(3002);
+var http_server = http.createServer(app).listen(3000);
 
-function emitOnNewOrder(http_server) {
-  var io = socket.listen(http_server);
-  io.sockets.on("connection", function(socket) {
-    socket.on("new-order", function(data) {
-      io.emit("new-order", data);
+function emitEvent(http_server) {
+    var io = socket.listen(http_server);
+    io.sockets.on("connection", function (socket) {
+        socket.on("new-event", function (data) {
+            io.emit("new-event", data);
+        });
     });
-  });
 }
 
-emitOnNewOrder(http_server);
+emitEvent(http_server);
